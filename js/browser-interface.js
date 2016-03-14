@@ -3,7 +3,6 @@ var entry = require('./entry-constructor.js');
 $(document).ready(function(){
   $('#entry').submit(function(event){
     event.preventDefault();
-    debugger;
     var title = $('#title').val();
     var body = $('#body').val();
     var entryObject = new entry.Entry(title, body);
