@@ -1,6 +1,10 @@
+var moment = require('moment');
+
+
 function Entry(title, body){
   this.title = title;
   this.body = body;
+  creationDate = moment().format("MMM Do YY");
 }
 
 Entry.prototype.countWords = function(){

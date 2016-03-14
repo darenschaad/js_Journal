@@ -7,7 +7,7 @@ $(document).ready(function(){
     var body = $('#body').val();
     var entryObject = new entry.Entry(title, body);
     var wordCount = entryObject.countWords();
-    $('#entries').append("<li> title:" + title + " body: " + body + " word count: " + entryObject.countWords() + "</li>");
+    $('#entries').append("<li> title:" + title + " body: " + body + " word count: " + entryObject.countWords() + "This journal entry was created on: " + creationDate + "</li>");
   });
 });
 
